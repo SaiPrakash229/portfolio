@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prakash Madderla | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a2d9d6a66a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="cursor">
+    <div class="cursor-core"></div>
+    <div class="cursor-glow"></div>
+  </div>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+   <!-- Aurora Glow Background -->
+   <div class="aurora"></div>
+
+
+  <!-- Background -->
+  <canvas id="bg"></canvas>
+  <div id="click-dots-container"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar glass-nav">
+    <div class="nav-toggle" id="nav-toggle">
+    <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    <div class="logo">🚀 Sai Prakash</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero fade-in parallax">
+    <div class="hero-text">
+      <h1 class="glow-text glitch" data-text="Hi, I’m Sai Prakash">Hi, I’m <span>Sai Prakash</span></h1>
+      <h2 class="title">Senior Software Engineer</h2>
+      <p class="typewriter">I'm a <span id="typewriter-text"></span></p>
+
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn neon-btn">🚀 View Projects</a>
+        <a href="#contact" class="btn-outline neon-btn">💡 Hire Me</a>
+        <a href="SaiPrakash_SE1.pdf" download class="btn btn-resume neon-btn">📄 Download Resume</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="neon-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="neon-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="neon-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="hero-image floating tilt">
+      <img src="saiprakashimage.jpg" alt="My Photo" class="profile"/>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="fade-in glass-card">
+    <h2>About Me</h2>
+    <p>
+      Senior Software Engineer with 5+ years of experience building scalable,
+      distributed, and high-availability applications in healthcare and enterprise domains.
+      Skilled in full-stack development, cloud infrastructure, CI/CD automation,
+      and mentoring teams. Passionate about AI/ML integration and performance optimization.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="fade-in glass-card">
+    <h2>Skills & Expertise</h2>
+    <div id="skills-carousel" class="skills-carousel">
+      <span class="skill glow-card">Angular</span>
+      <span class="skill glow-card">React.js</span>
+      <span class="skill glow-card">JavaScript</span>
+      <span class="skill glow-card">TypeScript</span>
+      <span class="skill glow-card">Java</span>
+      <span class="skill glow-card">C# / .NET</span>
+      <span class="skill glow-card">Python</span>
+      <span class="skill glow-card">Golang</span>
+      <span class="skill glow-card">AWS</span>
+      <span class="skill glow-card">Azure</span>
+      <span class="skill glow-card">Kubernetes</span>
+      <span class="skill glow-card">Docker</span>
+      <span class="skill glow-card">Terraform</span>
+      <span class="skill glow-card">SQL</span>
+      <span class="skill glow-card">MongoDB</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="fade-in glass-card">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item tilt">
+        <h3>Master of Science in Business Analytics & Information Systems</h3>
+        <span>University of South Florida</span>
+      </div>
+      <div class="timeline-item tilt">
+        <h3>Bachelor of Technology in Electronics & Communication Engineering</h3>
+        <span>GCET</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="fade-in glass-card">
+    <h2>Experience</h2>
+    <div class="experience-grid">
+      <div class="experience-card glow-card tilt">
+        <h3>Sr. Software Engineer – HCA Healthcare</h3>
+        <span>May 2023 – May 2024</span>
+        <p>Led design & development of HIPAA-compliant patient onboarding apps using Angular & Spring Boot. Mentored juniors, implemented CI/CD pipelines, and integrated AI/ML workflows.</p>
+      </div>
+      <div class="experience-card glow-card tilt">
+        <h3>Software Engineer – Amazon</h3>
+        <span>Jun 2021 – Jul 2022</span>
+        <p>Developed distributed systems handling 10M+ daily transactions. Automated cloud deployments with Terraform and improved API latency by 50%.</p>
+      </div>
+      <div class="experience-card glow-card tilt">
+        <h3>Software Engineer – Wipro</h3>
+        <span>Aug 2019 – Jun 2021</span>
+        <p>Built enterprise microservices using Spring Boot & Angular. Migrated BI systems to Snowflake, improving performance by 45%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="fade-in glass-card">
+    <h2>Projects</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-card glow-card tilt">
+        <h3>IoT Monitoring Pipeline</h3>
+        <p>Built distributed pipeline using Kafka, Spark Streaming & Azure Data Lake for 100K+ IoT devices.</p>
+      </div>
+      <div class="portfolio-card glow-card tilt">
+        <h3>Automation & Cloud Deployment</h3>
+        <p>Implemented CI/CD automation for microservices on AWS EKS, cutting release time by 40%.</p>
+      </div>
+      <div class="portfolio-card glow-card tilt">
+        <h3>Dashboard Analytics</h3>
+        <p>Designed real-time dashboards integrating AWS services for enterprise clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in glass-card">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-details glow-card tilt">
+        <h3> My Details</h3>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:saiprakashm226@example.com">saiprakashm226@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> Phone: <a href="tel:+18329859229">+1 (832) 985-9229</a></p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/prakash-madd" target="_blank" rel="noopener noreferrer">linkedin.com/in/prakash-madd</a></p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/prakash-madd" target="_blank" rel="noopener noreferrer">github.com/prakash-madd</a></p>
+      </div>
+
+      <form class="contact-form glow-card tilt">
+        <h3> Send Me a Message</h3>
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your Email" required/>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn neon-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="glass-footer">
+    <p>© <span id="year"></span> Prakash Madderla | Built with ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
